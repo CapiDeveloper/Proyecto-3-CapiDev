@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 80px;
+}
+/* Contenedor del banner */
+.contenedor{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+/* Video */
+.background{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+}
+/* Banner */
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.481);
+}
+/* Navegacion */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-inline:auto;
+    padding-top: 10px;
+}
+.logo img{
+    height: 30px;
+    width: 100px;
+}
+@media (min-width:768px) {
+    .logo img{
+        height: 60px;
+        width: 200px;
+    }
+}
+/* User */
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.user--icono{
+    background-color: white;
+   border-radius: 50%;
+   border: 3px solid blue;
+   padding: 5px; 
+}
+.user--icono img{
+    width: 20px;
+    height: 20px;
+}
+.user--nombre{
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+@media (min-width:768px) {
+    .user--nombre{
+        font-size: 25px;
+    }
+}
+/* Contenido banner */
+.contenido{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-inline:auto;
+}
+@media (min-width:992px) {
+    .contenido{
+        flex-direction: row;
+        margin: auto;
+    }
+}
+/* Información */
+.informacion{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:768px) {
+    .informacion{
+        flex: none;
+    }
+}
+.informacion--contenido{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+}
+@media (min-width:992px) {
+    .informacion--contenido{
+        text-align: start;
+        gap: 30px;
+    }
+}
+.informacion--titulo{
+    font-size: 40px;
+    font-weight: 900;
+}
+.informacion--parrafo{
+    font-size: 18px;
+    font-weight: 700;
+}
+@media (min-width:768px) {
+    .informacion--titulo{
+        font-size: 60px;   
+    }
+    .informacion--parrafo{
+        font-size: 25px;
+    }
+}
+.informacion--btn button{
+    padding-block: 10px;
+    padding-inline: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+    border: 3px solid blue;
+    color: white;
+}
+.informacion--btn button:hover{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+/* Animacion */
+.animacion{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+@media (min-width:992px) {
+    .animacion{
+        flex: 1;
+    }
+}
+.goku{
+    position: absolute;
+}
+.goku img{
+    display: block;
+    min-width: 300px;
+    opacity: .2;
+    animation: goku 3s infinite;
+}
+@keyframes goku {
+    0%{
+        opacity: .6;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .6;
+    }
+}
+@media (min-width:480px) {
+    .goku img{
+        min-width: 305px;
+    }
+}
+@media (min-width:992px) {
+    .goku img{
+        min-width: 580px;
+    }
+}
+@media (min-width:1250px) {
+    .goku img{
+        min-width: 750px;
+    }
+}
+@media (min-width:1600px) {
+    .goku img{
+        min-width: 850px;
+    }
+}
+@media (min-width:1800px) {
+    .goku img{
+        min-width: 900px;
+    }
+}
+.rayos{
+    position: relative;
+    opacity: 1;
+    animation: electrico 3s infinite;
+}
+@keyframes electrico {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.rayos img{
+    display: block;
+    min-width: 250px;
+}
+@media (min-width:1024px) {
+    .rayos img{
+        min-width: 500px;
+    }
+}
+@media (min-width:1250px) {
+    .rayos img{
+        min-width: 550px;
+    }
+}
